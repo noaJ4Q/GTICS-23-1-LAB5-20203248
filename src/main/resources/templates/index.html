@@ -18,28 +18,9 @@
 
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark navbar-expand">
-            <div class="container">
-            <span class="navbar-brand">
-                Laboratorio 5
-            </span>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <span class="nav-link active">Empleados</span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav-link">Historial</span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav-link">Reportes</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div style="width:80%;" class="container py-2">
-            <img src="">
+        <div th:replace="~{fragments/nav.html :: nav}"></div>
+        <div style="width:80%;" class="container py-2 d-flex justify-content-center align-items-center">
+            <img th:src="@{/travel_trip_logo.png}">
         </div>
 
     </body>
