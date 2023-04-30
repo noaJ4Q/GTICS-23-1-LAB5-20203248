@@ -7,7 +7,10 @@
     <body>
       <nav th:fragment="nav" class="navbar navbar-dark bg-dark navbar-expand">
         <div class="container">
-          <div class="collapse navbar-collapse">
+            <a th:href="@{/}" class="navbar-brand">
+                Recursos Humanos - TravelTrip
+            </a>
+            <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a th:href="@{/Empleados}" class="nav-link">Empleados</a>
